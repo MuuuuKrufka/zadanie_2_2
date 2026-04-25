@@ -1,1 +1,74 @@
+body {
+        background: linear-gradient(45deg, #ff00ff, #00ff00, #ff0000, #ffff00);
+        background-size: 400% 400%;
+        animation: gradient 2s ease infinite;
+        cursor: crosshair;
+        color: #0000ff;
+        padding: 50px;
+    }
 
+    @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    h2 {
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        font-size: 50px;
+        color: yellow;
+        text-shadow: 5px 5px 0px red, 10px 10px 0px blue;
+        transform: rotate(-5deg);
+        border: 10px dashed lime;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    p {
+        background-color: #000000;
+        color: #ff00ff;
+        border: 5px double white;
+        outline: 10px solid orange;
+        margin: 40px;
+        filter: blur(0.5px); 
+    }
+
+    strong {
+        background-color: yellow;
+        color: red;
+        font-size: 1.5em;
+        text-decoration: underline wavy blue;
+    }
+
+    q {
+        display: block;
+        font-family: "Courier New", monospace;
+        font-size: 10px;
+        letter-spacing: 10px;
+        line-height: 2;
+        background: white;
+        color: black;
+        margin-top: 20px;
+        animation: shake 0.5s infinite;
+    }
+
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        50% { transform: translate(3px, 2px) rotate(-1deg); }
+        100% { transform: translate(1px, -1px) rotate(0deg); }
+    }
+
+    small {
+        font-size: 5px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background: black;
+        color: white;
+    }
+
+    *:hover {
+        transform: scale(0.8) mirror;
+        filter: invert(100%);
+    }
